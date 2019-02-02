@@ -19,10 +19,6 @@ import java.util.regex.*;
 
 public class lab01 {
 	
-	
-	ArrayList<String> keyWords = new ArrayList<String>();
-	
-	
 	public static final String idWithComasRegx = "^(int|float|String|double|byte|char)[ ]+[^\\d\\s](([{[\\w$_]*]*)*)(,?[ ]*(([{[\\w$_]*]*)*))*;";
 	public static final String idwithValueRegx = "(char|int|double|String|byte)[ ]+[^\\d\\s](([{[\\w$_]*]*)*)[ ]*=[ ]*([.]*)";
 	public static final String numericValuesRegx = "([-]?([\\d]*[\\.]?[\\d]+))";
@@ -68,7 +64,6 @@ public class lab01 {
 	
 	public static boolean OthersChecker(String str) {
 		String theRegex = OtherRegx;
-		
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -86,7 +81,6 @@ public class lab01 {
 	
 	public static boolean conOpChecker(String str) {
 		String theRegex = conOpRegx;
-		
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -104,7 +98,6 @@ public class lab01 {
 	
 	public static boolean MathOpChecker(String str) {
 		String theRegex = mathOpRegx;
-		
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -125,7 +118,6 @@ public class lab01 {
 	
 	public static boolean CharChecker(String str) {
 		String theRegex = charRegx;
-		
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -143,8 +135,7 @@ public class lab01 {
 	
 	
 	public static boolean StringChecker(String str) {
-		String theRegex = stringRegx;
-		
+		String theRegex = stringRegx;	
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -164,7 +155,6 @@ public class lab01 {
 
 	public static boolean neumericChecker(String str) {
 		String theRegex = numericValuesRegx;
-		
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -183,7 +173,6 @@ public class lab01 {
 	
 	public static boolean identifierWithValueChecker(String str) {
 		String theRegex = idwithValueRegx;
-		
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -203,8 +192,7 @@ public class lab01 {
 	
 	
 	public static boolean identifiercommaChecker(String str) {
-		String theRegex = idWithComasRegx;
-		
+		String theRegex = idWithComasRegx;	
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -224,7 +212,6 @@ public class lab01 {
 	
 	public static boolean keywordChecker(String str) {
 		String theRegex =keywordsRegx;
-		
 		boolean ret = false;
 		
 		Pattern checkRegex = Pattern.compile(theRegex);
@@ -242,15 +229,12 @@ public class lab01 {
 	
 	public static String perserForneumeric(String str) {
 		
-		
 		for(String ss:idSet) {
 			str = str.replaceAll(ss, "");
-		}
-		
+		}	
 		str = str.replaceAll(charRegx, "");
 		str = str.replaceAll(stringRegx, "");
-		
-		
+			
 		return str;
 	}
 	
@@ -263,8 +247,8 @@ public class lab01 {
 		identifiercommaChecker(str);
 		StringChecker(str);
 		CharChecker(str);
+		
 		str=perserForneumeric(str);
-
 		neumericChecker(str);
 		
 	}

@@ -1,0 +1,26 @@
+int apple,box, cat;
+float  dog,elephant;
+apple=box=-5; cat= 16.82;
+String str="Compiler";
+if(apple>=box)
+{
+	cat =  apple - box;
+	double fox=dog-2.7;
+}
+else
+{
+	dog=elephant + 6%apple;
+	box = apple+(cat-dog/4.33);
+}
+for(int i=0; i<10;i++)
+{
+	if(i%2==0)
+	   i=i*3/box;
+	else
+           i=i+box*5;
+	char ct1='A';
+	while(ct1<ct1+3){
+		ct1++;	
+	}
+}
+int $_foo=420;

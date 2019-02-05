@@ -22,10 +22,10 @@ public class lab01 {
 	public static final String idWithComasRegx = "^(int|float|String|double|byte|char)[ ]+[^\\d\\s](([{[\\w$_]*]*)*)(,?[ ]*(([{[\\w$_]*]*)*))*;";
 	public static final String idwithValueRegx = "(char|int|double|String|byte)[ ]+[^\\d\\s](([{[\\w$_]*]*)*)[ ]*=[ ]*([.]*)";
 	public static final String numericValuesRegx = "([-]?([\\d]*[\\.]?[\\d]+))";
-	public static final String stringRegx = "\"[\\w\\d\\s\\S]*";
+	public static final String stringRegx = "\"[.]*";
 	public static final String charRegx = "'[\\w\\d\\s\\S.]'";
 	public static final String keywordsRegx =  "(byte|short|int|float|double|long|char|boolean|String|if|else|else if|for|public|static|void|main)";
-	public static final String mathOpRegx = "(\\*)|(\\+\\+)|\\/|\\%|(\\-\\-)|\\-|\\=";
+	public static final String mathOpRegx = "(\\*)|(\\+\\+)|\\/|\\%|(\\-\\-)|\\-|\\=|\\+";
 	public static final String conOpRegx = "(>=)|(==)|(<=)|<|>";
 	public static final String OtherRegx = "[\\{\\}\\(\\)\\[\\]\\;]";
 

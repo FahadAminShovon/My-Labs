@@ -22,7 +22,6 @@ public class lab05 {
 	
 	
    public static HashMap<String,ArrayList<HashMap<String,String>>> columns  = new HashMap<String,ArrayList<HashMap<String,String>>>();
-   public static HashMap<Character,Integer> checker = new HashMap<Character,Integer>();
    public static Stack<Character> ss = new Stack<Character>(); 
    
    public static String stringer(char a) {

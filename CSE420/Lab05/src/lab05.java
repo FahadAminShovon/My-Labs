@@ -3,9 +3,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
 import java.util.Stack;
 
 /**
@@ -153,7 +150,7 @@ public class lab05 {
 	
 	public static void tablePrinter() {
 		for (String key : columns.keySet()) {
-			System.out.println(key);
+			System.out.println(printer(key));
 			
 			ArrayList<HashMap<String,String>> xx = columns.get(key);
 			
@@ -161,7 +158,7 @@ public class lab05 {
 				HashMap<String,String> yy = xx.get(i);
 				
 				for(String j : yy.keySet()) {
-				System.out.println(j+"->"+yy.get(j));
+				System.out.println(printer(j)+"->"+printer(yy.get(j)));
 				}
 				
 			}

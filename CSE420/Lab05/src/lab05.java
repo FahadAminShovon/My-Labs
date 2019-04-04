@@ -141,9 +141,9 @@ public class lab05 {
 		setter("(","E","TX");
 		setter("(","T","FY");
 		setter("(","F","(E)");
-		setter(")","E","e");
+		setter(")","X","e");
 		setter(")","Y","e");
-		setter("$","E","e");
+		setter("$","X","e");
 		setter("$","Y","e");	
 	}
 	

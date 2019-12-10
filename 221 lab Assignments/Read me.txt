@@ -1,5 +1,0 @@
-Name: B.M. Fahad-ul-Amin
-Id: 16101251
-Course: CSE 221
-Theory section : 05
-Lab Section : 04
